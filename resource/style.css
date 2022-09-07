@@ -1,0 +1,48 @@
+QFrame#mainFrame{
+    background-color: #363434;
+}
+
+QFrame#headFrame{
+    background-color: #615757;
+}
+
+QFrame#bodyFrame{
+    background-color: #615757;
+    /* background-color: #363434; */
+    border: 1px solid #615757;
+}
+
+QFrame#bioFrame{
+    background-color: #6B5D5D;
+}
+
+QTextBrowser#userBio{
+    background-color: #6B5D5D;
+    border: none;
+    color: #fff;
+    font-size: 23px;
+}
+
+QLabel#userName {
+    color: #fff;
+    font-size: 28px;
+}
+QLabel#followerStatus {
+    color: #fff;
+    font-size: 23px;
+}
+
+QTableWidget#repositoryTable {
+    background-color: #403535;
+    color: #fff;
+    font-size: 21px;
+    border: none;
+    selection-color: #fff;
+    selection-background-color: #403535;
+}
+
+QHeaderView::section{
+    background-color: #403535;
+    font-size: 23px;
+    color: #fff;
+}
