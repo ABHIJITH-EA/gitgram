@@ -37,9 +37,19 @@ class MainWindow(object):
         self.star = ["41.1k", "823", "429", "216", "199", "199", "136"]
 
         self.tableItems = [self.name, self.language, self.fork, self.star]
-        
-    
+
+
     def setUpMainWindow(self, mainWindow):
+        self.menuBar = QtWidgets.QMenuBar(mainWindow)
+        settingsMenu = QtWidgets.QMenu('&Settings', mainWindow)
+        helpMenu = QtWidgets.QMenu('&Help', mainWindow)
+        aboutMenu = QtWidgets.QMenu('&About', mainWindow)
+        self.menuBar.addMenu(settingsMenu)
+        self.menuBar.addMenu(helpMenu)
+        self.menuBar.addMenu(aboutMenu)
+        mainWindow.setMenuBar(self.menuBar)
+
+
         mainWindow.setWindowTitle(self.title)
         mainWindow.resize(self.window_min_width, self.window_min_height)
         mainWindow.setWindowIcon(self.window_icon)
